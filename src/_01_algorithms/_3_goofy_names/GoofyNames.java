@@ -9,7 +9,24 @@ import javax.swing.JOptionPane;
 public class GoofyNames {
 	public static void main(String[] args) {
 		String goofyName = "";
-
+		String name = JOptionPane.showInputDialog("What is your name?");
+		System.out.println(name.toUpperCase());
+		int lengthOfName = name.length();
+		for (int j = 0; j <lengthOfName; j++){
+			int i = j;
+			char nameLetter = name.charAt(i);
+			if (i % 2 ==0){
+				Character.toUpperCase(nameLetter);
+				goofyName+=nameLetter;
+				i++;
+			}
+			else{
+				Character.toLowerCase(nameLetter);
+				goofyName+=nameLetter;
+				i++;
+			}
+		}
+		System.out.println(goofyName);
 		// 1. Ask the user to enter their name
 
 		// 2. Print upper case name to the console using .toUpperCase()

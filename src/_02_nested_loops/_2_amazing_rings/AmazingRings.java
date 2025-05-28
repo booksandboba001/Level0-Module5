@@ -2,7 +2,6 @@ package _02_nested_loops._2_amazing_rings;
 
 import processing.core.PApplet;
 import processing.core.PImage;
-
 /*
  * Goal: Create a pair of Amazing Rings!
  * 
@@ -39,22 +38,21 @@ import processing.core.PImage;
 public class AmazingRings extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
-
+    int speed=0;
+    int x = speed;
     PImage waldo;
-
     @Override
     public void settings() {
-
+        size(WIDTH,HEIGHT);
     }
-
     @Override
     public void setup() {
-
+        
+        noFill();
     }
-
     @Override
     public void draw() {
-
+        background(100);
     }
 
     static public void main(String[] args) {

@@ -241,4 +241,23 @@ class MyJavaProgram{
 SUBMIT YOUR ANSWERS
 ```
 <hr size="3"/>
-
+tacos
+Cat in the Hat
+Frankenstein Frankenstein
+book
+5
+3
+FOUR
+CLICK CLICK
+124
+012
+XY
+CAB
+ACB
+12345
+54321
+horse horse horse horse horse
+54321 dynamite
+2,4,6,8,10,12,14,16,18,20
+count5 count4 count3 count2 count1 count0
+7, 14, 21

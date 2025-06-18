@@ -58,9 +58,24 @@ System.out.println(number-Number);
 
 void skill4() {
 // In a pop-up, ask the user for the city they live in
-
+String city = JOptionPane.showInputDialog("What city do you live in?");
+if (city.equals("San Diego")){
+    System.out.println("You live in America's finest city");
+}
+else{
+    System.out.println("Move to San Diego!");
+}
 // If they answered "San Diego", tell them they live in America's Finest City
-
+int cars =2;
+if (cars==0){
+    JOptionPane.showMessageDialog(null,"I bet you use public transportation.");
+}
+if(cars==1){
+    JOptionPane.showMessageDialog(null,"I can't make pictures");
+}
+else{
+    JOptionPane.showMessageDialog(null, "There is a grand total of "+(cars*4)+" wheels.");
+}
 // Otherwise, tell them to move to San Diego
 
 // Create a variable - cars - and initialize it to the number of cars your family has.
@@ -75,7 +90,8 @@ void skill4() {
 
 void skill5() {
 // In a pop-up, ask the user for the name of their school
-
+String school = JOptionPane.showInputDialog("what is the name of your school?");
+JOptionPane.showMessageDialog(null,school+" sounds like it is a fantastic school!");
 // In another pop-up, tell the user, that their school is a fantastic school.
 // You must include the name of the school in the message.
 

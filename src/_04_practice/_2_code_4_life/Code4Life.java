@@ -7,6 +7,7 @@ import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
+
 public class Code4Life {
 	/***********  SOUND ***************
 	 * Some computers are unable to play sounds. 
@@ -27,10 +28,20 @@ public class Code4Life {
 	// 4. If it is more than 5, call the playBatmanTheme  method, then 
 	//    call the displayBatman method.
 
-
-
-	
 	private static void playBatmanTheme() {
+
+		String hours = JOptionPane.showInputDialog("How many hours did you spend coding this week?");
+		int coding = Integer.parseInt(hours);
+		if (coding<=2){
+			JOptionPane.showMessageDialog(null, "Get off Splatoon and code some more!");
+		}
+		if ((coding>=3)&&(coding<=5)){
+			JOptionPane.showMessageDialog(null, "You are a coding ninja");
+		}
+		if(coding >5){
+			displayBatman();
+		}
+	
 	// NOTE: Download batman.wav from league-sounds on GitHub: https://github.com/jointheleague/league-sounds
 	//	     Then put batman.wav into the "_2_code_4_life" project
 	//       If you want to play a different audio, change the file name in the code below.

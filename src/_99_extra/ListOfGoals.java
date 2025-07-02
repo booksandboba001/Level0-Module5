@@ -8,7 +8,10 @@ public class ListOfGoals {
 	
 	public static void main(String[] args) {
 		//1. Call the appropriate method to make your list of goals
-		
+		createListOfGoals();
+		JOptionPane.showMessageDialog(null, "These are your goals: "+getListOfGoals());
+		getNumberOfGoals();
+		isManyGoals();
 		//2. Call the appropriate method to get your list of goals, 
 		//   so you can use a pop-up to display them
 
@@ -42,7 +45,7 @@ public class ListOfGoals {
 	
 	static boolean isManyGoals() {
 		if( getNumberOfGoals() > 2) {
-			return true;
+			JOptionPane.showMessageDialog(null, "You have a lot of goals!");
 		}
 		return false;
 	}

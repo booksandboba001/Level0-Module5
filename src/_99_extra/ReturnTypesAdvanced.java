@@ -11,11 +11,18 @@ public class ReturnTypesAdvanced {
 	
 	public static void main(String[] args) {
 		//1. Ask the user how many sides they want their shape to be
-		
+		String side = JOptionPane.showInputDialog("How many sides do you want your shape to have?");
+		int s = Integer.parseInt(side);
+		boolean whether = canMakeShape(s);
+		if (!whether){
+			notEnoughSides();
+		}
 		//2. Call canMakeShape() and save what is returned into a variable
 		
 		//3. If the shape CAN be drawn
-		
+		int angle = calculateTurnAngle(s);
+		drawPolygon(s, angle);
+		notEnoughSides();
 			//4. Call and save what is returned from calculateTurnAngle()
 		
 			//5. Use drawPolygon() to draw your shape
@@ -27,16 +34,16 @@ public class ReturnTypesAdvanced {
 	}
 	
 	static int calculateTurnAngle(int numSides) {
-		int angle = 180-(((numSides-2)*180)/numSides);
-		return angle;
+		int turn = 180-(((numSides-2)*180)/numSides);
+		return turn;
 	}
 	
-	static void drawPolygon(int numSides, int degrees) {
+	static void drawPolygon(int numSides, int degree) {
 		rob.setSpeed(100);
 		rob.penDown();
 		for(int i = 0; i < numSides; i++) {
 			rob.move(100);
-			rob.turn(degrees);
+			rob.turn(degree);
 		}
 		rob.hide();
 	}

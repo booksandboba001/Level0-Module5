@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodingExercise1",
+            "request": "launch",
+            "mainClass": "_05_self_tests.CodingExercise1",
+            "projectName": "Level0-Module5_26c0ea0a"
+        },
+        {
+            "type": "java",
             "name": "SkillPractice",
             "request": "launch",
             "mainClass": "_04_practice._1_skill_practice.SkillPractice",

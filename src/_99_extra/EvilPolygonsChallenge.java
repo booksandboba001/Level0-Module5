@@ -13,9 +13,6 @@ public class EvilPolygonsChallenge {
 		Robot rob = new Robot();
 		rob.setY(600);
 		rob.setSpeed(100);
-		
-		//2. Set the speed to 100
-
 		int colorChoice=JOptionPane.showOptionDialog(null, "hello", "Choose your color", JOptionPane.INFORMATION_MESSAGE, JOptionPane.DEFAULT_OPTION, null, new String[]{"Red","Green", "Blue"}, 0);
 		if (colorChoice==0){
 			rob.setPenColor(255,0,0);
@@ -32,15 +29,6 @@ public class EvilPolygonsChallenge {
 			polygon(rob, gon);
 		}
 		rob.move(30);
-		//3. Use if statements to check the the value of colorChoice and set the pen color accordingly 
-		
-		//4. Ask the use how many polygons they want to be drawn.
-		
-		//5. Use the robot to draw the number of polygons the user requested.
-		
-		//6. Make it so your shapes do not overlap
-		
-		//7. Challenge: add more colors to the Option Dialog.
 	}
 	public static void polygon(Robot rob, int gon) {
 		rob.penDown();
@@ -55,3 +43,16 @@ public class EvilPolygonsChallenge {
 	}
 }
 
+
+		
+		//2. Set the speed to 100
+
+		//3. Use if statements to check the the value of colorChoice and set the pen color accordingly 
+		
+		//4. Ask the use how many polygons they want to be drawn.
+		
+		//5. Use the robot to draw the number of polygons the user requested.
+		
+		//6. Make it so your shapes do not overlap
+		
+		//7. Challenge: add more colors to the Option Dialog.
